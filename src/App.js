@@ -9,9 +9,9 @@ function App() {
         {/* Calling Basic Component */}
         <Card/>
         {/*  ----------  Components Card with props ------------- */}
-       <CardWithProps name="mithilesh" class="12th"/>
-       <CardWithProps name="himanshu" class="BA"/>
-       <CardWithProps name="Pushpa" class="BCA" gender="female"/>
+       <CardWithProps name="mithilesh" currentclass="12th"/>
+       <CardWithProps name="himanshu" currentclass="BA"/>
+       <CardWithProps name="Pushpa" currentclass="BCA" gender="female"/>
         {/* -------------------------------------- */}
     </div>
   );
