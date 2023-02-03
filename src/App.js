@@ -1,5 +1,6 @@
 import Card from "./components/Card";
 import CardWithProps from "./components/CardWithProps";
+import ConditionalRendering from "./components/ConditionalRendering";
 import LearningState from "./components/LearningState";
 
 function App() {
@@ -18,10 +19,13 @@ function App() {
        <CardWithProps name="himanshu" currentclass="BA"/>
        <CardWithProps name="Pushpa" currentclass="BCA" gender="female"/>
         </div>
-        {/* -------------------------------------- */}
 
+        {/* -------------------------------------- */}
         <h3>This is Component with state</h3>
         <LearningState/>
+        {/* -------------------------------------- */}
+        <h3>This is Component with ConditionalRendering</h3>
+       <ConditionalRendering/>
 
     </div>
   );
