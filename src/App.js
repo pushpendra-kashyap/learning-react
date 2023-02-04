@@ -2,6 +2,7 @@ import Card from "./components/Card";
 import CardWithProps from "./components/CardWithProps";
 import ConditionalRendering from "./components/ConditionalRendering";
 import LearningState from "./components/LearningState";
+import Loop from "./components/Loop";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         {/* -------------------------------------- */}
         <h3>This is Component with ConditionalRendering</h3>
        <ConditionalRendering/>
+        {/* -------------------------------------- */}
+        <h3>This is Loop</h3>
+       <Loop/>
 
     </div>
   );
