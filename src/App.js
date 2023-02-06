@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import AdavanceCard from "./components/AdavanceCard";
 import Card from "./components/Card";
 import CardWithProps from "./components/CardWithProps";
@@ -7,6 +8,9 @@ import Loop from "./components/Loop";
 
 function App() {
 
+  const [name, setName] = useState('shyam')
+  const [age, setAge] = useState('70')
+
   const print = () => {
     console.log("I am Clicked")
   }
@@ -15,10 +19,28 @@ function App() {
     console.log('I am Presshed')
   }
 
+  // run every time when component rerender
+  useEffect(() => {
+    console.log("component rerendered")
+  })
+  
+  // run only one time when component rendered
+  useEffect(() => {
+    console.log("component rendered")
+  },[])
+  
+  // run only when age changed
+    useEffect(() => {
+    alert("age changed")
+  },[age])
+
   return (
     <div>
         <div>Hello </div>
-
+      <button onClick={() => setName("birzu")}>print Name</button>
+      <p>{name}</p>
+      <button onClick={() => setAge("50")}>print age</button>
+      <p>{age}</p>
         {/* Calling Basic Component */}
         <h3>This is Basic Component</h3>
         <Card/>
