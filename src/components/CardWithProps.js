@@ -1,9 +1,10 @@
 import React from 'react'
 
-function CardWithProps({name, currentclass, gender}) {
+function CardWithProps({name, currentclass, gender, click}) {
     // console.log(props)
     // console.log(props.name)
     // console.log(props.class)
+
 
 
   return (
@@ -15,7 +16,7 @@ function CardWithProps({name, currentclass, gender}) {
 
     {/* ----------- Conditional Rendering -------- */}
     {/* {props.gender ?  <button>{props.gender}</button> : null} */}
-  { gender &&  <button>{gender}</button>}
+  { gender &&  <button onClick={ click}>{gender}</button>}
         </div>
   {/* --------------------------------- */}
     </div>
